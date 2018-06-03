@@ -19,12 +19,12 @@ exports.initialise = function () {
         generate.then(() => {
             var currentDate = new Date(Date.now()).toLocaleString();
             console.log(`File updated on: ${currentDate}`);
-        })
+        });
     }, day);
     return generate = generateData().then(function (result) {
         saveData(result);
     });
-}
+};
 
 // Save the category data to a JSON file
 const saveData = function (jsonArray) {
@@ -37,7 +37,7 @@ const saveData = function (jsonArray) {
             resolve(true);
         });
     });
-}
+};
 
 // Scrape the data and format it into a sensible structure
 const generateData = function () {
@@ -70,4 +70,4 @@ const generateData = function () {
     }).catch(error => {
         console.log(`There has been a problem: ${error}`);
     });
-}
+};

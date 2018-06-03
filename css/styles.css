@@ -183,7 +183,7 @@ input[type=search]:focus, input[type=search].has-focus {
 }
 
 .subcat-container ul {
-    margin: 0px 0 0px 20px;
+    margin: 0 0 0 20px;
 }
 
 .bullet {

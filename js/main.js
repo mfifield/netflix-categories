@@ -19,10 +19,10 @@ const loadData = (url) => {
                     reject(xhr.status);
                 }
             }
-        }
+        };
     });
     return promiseObj;
-}
+};
 
 // If there's an error with the ajax request
 const ajaxErrorHandler = (error) => {
@@ -53,7 +53,7 @@ const generateCategories = (dataSet, showSubCats) => {
         generatedMarkup1 = `<ul class="category-list">${generatedMarkup1}</ul>`;
     }
     document.querySelector('#categories').innerHTML = generatedMarkup1;
-}
+};
 
 // Filter the result set by partial string matching
 const filterResults = (value) => {
@@ -64,14 +64,15 @@ const filterResults = (value) => {
                 return (subCategory.category.toLowerCase().indexOf(value) !== -1);
             });
             if (mainCategory.category.toLowerCase().indexOf(value) !== -1 || matchArray.length > 0) {
-                filteredResults.push({ "catId": mainCategory.catId, "category": mainCategory.category, "subCategories": matchArray });
+                filteredResults.push({ "catId": mainCategory.catId, 
+                "category": mainCategory.category, "subCategories": matchArray });
             }
         });
         generateCategories(filteredResults, true);
     } else {
         generateCategories(originalDataSet);
     }
-}
+};
 
 // Toggle the subcategory visibility
 const toggleCategory = (event) => {
@@ -79,9 +80,9 @@ const toggleCategory = (event) => {
     event.currentTarget.querySelectorAll('a').forEach(node => node.setAttribute('class', ''));
     var classArray = toggleButton.getAttribute('class').indexOf('down') === -1 ? 
     ['toggle icon-circle-down','subcat-container show'] : ['toggle icon-circle-right','subcat-container hide'];
-    toggleButton.setAttribute('class', classArray[0])
+    toggleButton.setAttribute('class', classArray[0]);
     subContainer.setAttribute('class', classArray[1]);
-}
+};
 
 // Bind listeners to categegory toggles and filtering
 const bindEventListeners = () => {
@@ -99,7 +100,7 @@ const bindEventListeners = () => {
     document.querySelector('header button.icon-search').addEventListener('click', function (event) {
         document.querySelector('#filter').focus();
     });
-}
+};
 
 // When DOM has loaded render the content
 document.addEventListener('DOMContentLoaded', function () {
@@ -108,6 +109,6 @@ document.addEventListener('DOMContentLoaded', function () {
         generateCategories(originalDataSet);
         bindEventListeners();
         // Prevent FOUC (remove the no-js class on the HTML element)
-        ((H) => { H.className = H.className.replace(/\bno-js\b/, 'js') })(document.documentElement);
+        (function(H) { H.className = H.className.replace(/\bno-js\b/, 'js') })(document.documentElement);
     });
 }, false);
