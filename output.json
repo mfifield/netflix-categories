@@ -1,0 +1,968 @@
+[
+    {
+        "catId": 1365,
+        "category": "Action & Adventure",
+        "subCategories": [
+            {
+                "catId": 43040,
+                "category": "Action Comedies"
+            },
+            {
+                "catId": 43048,
+                "category": "Action Thrillers"
+            },
+            {
+                "catId": 7442,
+                "category": "Adventures"
+            },
+            {
+                "catId": 77232,
+                "category": "Asian Action Movies"
+            },
+            {
+                "catId": 46576,
+                "category": "Classic Action & Adventure"
+            },
+            {
+                "catId": 10118,
+                "category": "Comic Book and Superhero Movies"
+            },
+            {
+                "catId": 9584,
+                "category": "Crime Action & Adventure"
+            },
+            {
+                "catId": 11828,
+                "category": "Foreign Action & Adventure"
+            },
+            {
+                "catId": 8985,
+                "category": "Martial Arts Movies"
+            },
+            {
+                "catId": 2125,
+                "category": "Military Action & Adventure"
+            },
+            {
+                "catId": 10702,
+                "category": "Spy Action & Adventure"
+            },
+            {
+                "catId": 7700,
+                "category": "Westerns"
+            }
+        ]
+    },
+    {
+        "catId": 7424,
+        "category": "Anime",
+        "subCategories": [
+            {
+                "catId": 11881,
+                "category": "Adult Animation"
+            },
+            {
+                "catId": 2653,
+                "category": "Anime Action"
+            },
+            {
+                "catId": 9302,
+                "category": "Anime Comedies"
+            },
+            {
+                "catId": 452,
+                "category": "Anime Dramas"
+            },
+            {
+                "catId": 11146,
+                "category": "Anime Fantasy"
+            },
+            {
+                "catId": 3063,
+                "category": "Anime Features"
+            },
+            {
+                "catId": 10695,
+                "category": "Anime Horror"
+            },
+            {
+                "catId": 2729,
+                "category": "Anime Sci-Fi"
+            },
+            {
+                "catId": 6721,
+                "category": "Anime Series"
+            }
+        ]
+    },
+    {
+        "catId": 783,
+        "category": "Children & Family Movies",
+        "subCategories": [
+            {
+                "catId": 5507,
+                "category": "Animal Tales"
+            },
+            {
+                "catId": 67673,
+                "category": "Disney"
+            },
+            {
+                "catId": 10659,
+                "category": "Education for Kids"
+            },
+            {
+                "catId": 51056,
+                "category": "Family Features"
+            },
+            {
+                "catId": 52843,
+                "category": "Kids Music"
+            },
+            {
+                "catId": 27346,
+                "category": "Kids’ TV"
+            },
+            {
+                "catId": 10056,
+                "category": "Movies based on children’s books"
+            },
+            {
+                "catId": 6796,
+                "category": "Movies for ages 0 to 2"
+            },
+            {
+                "catId": 6962,
+                "category": "Movies for ages 11 to 12"
+            },
+            {
+                "catId": 6218,
+                "category": "Movies for ages 2 to 4"
+            },
+            {
+                "catId": 5455,
+                "category": "Movies for ages 5 to 7"
+            },
+            {
+                "catId": 561,
+                "category": "Movies for ages 8 to 10"
+            },
+            {
+                "catId": 11177,
+                "category": "TV Cartoons"
+            }
+        ]
+    },
+    {
+        "catId": 31574,
+        "category": "Classic Movies",
+        "subCategories": [
+            {
+                "catId": 31694,
+                "category": "Classic Comedies"
+            },
+            {
+                "catId": 29809,
+                "category": "Classic Dramas"
+            },
+            {
+                "catId": 32473,
+                "category": "Classic Foreign Movies"
+            },
+            {
+                "catId": 47147,
+                "category": "Classic Sci-Fi & Fantasy"
+            },
+            {
+                "catId": 46588,
+                "category": "Classic Thrillers"
+            },
+            {
+                "catId": 48744,
+                "category": "Classic War Movies"
+            },
+            {
+                "catId": 47465,
+                "category": "Classic Westerns"
+            },
+            {
+                "catId": 52858,
+                "category": "Epics"
+            },
+            {
+                "catId": 7687,
+                "category": "Film Noir"
+            },
+            {
+                "catId": 53310,
+                "category": "Silent Movies"
+            }
+        ]
+    },
+    {
+        "catId": 6548,
+        "category": "Comedies",
+        "subCategories": [
+            {
+                "catId": 1252,
+                "category": "Campy Movies"
+            },
+            {
+                "catId": 9434,
+                "category": "Cult Comedies"
+            },
+            {
+                "catId": 10944,
+                "category": "Cult Horror Movies"
+            },
+            {
+                "catId": 7627,
+                "category": "Cult Movies"
+            },
+            {
+                "catId": 4734,
+                "category": "Cult Sci-Fi & Fantasy"
+            },
+            {
+                "catId": 869,
+                "category": "Dark Comedies"
+            },
+            {
+                "catId": 4426,
+                "category": "Foreign Comedies"
+            },
+            {
+                "catId": 4195,
+                "category": "Independent Comedies"
+            },
+            {
+                "catId": 1402,
+                "category": "Late Night Comedies"
+            },
+            {
+                "catId": 26,
+                "category": "Mockumentaries"
+            },
+            {
+                "catId": 2700,
+                "category": "Political Comedies"
+            },
+            {
+                "catId": 5475,
+                "category": "Romantic Comedies"
+            },
+            {
+                "catId": 4922,
+                "category": "Satires"
+            },
+            {
+                "catId": 9702,
+                "category": "Screwball Comedies"
+            },
+            {
+                "catId": 10256,
+                "category": "Slapstick Comedies"
+            },
+            {
+                "catId": 5286,
+                "category": "Sports Comedies"
+            },
+            {
+                "catId": 11559,
+                "category": "Stand-up Comedy"
+            },
+            {
+                "catId": 3519,
+                "category": "Teen Comedies"
+            }
+        ]
+    },
+    {
+        "catId": 6839,
+        "category": "Documentaries",
+        "subCategories": [
+            {
+                "catId": 3652,
+                "category": "Biographical Documentaries"
+            },
+            {
+                "catId": 9875,
+                "category": "Crime Documentaries"
+            },
+            {
+                "catId": 5161,
+                "category": "Foreign Documentaries"
+            },
+            {
+                "catId": 5349,
+                "category": "Historical Documentaries"
+            },
+            {
+                "catId": 4006,
+                "category": "Military Documentaries"
+            },
+            {
+                "catId": 90361,
+                "category": "Music & Concert Documentaries"
+            },
+            {
+                "catId": 7018,
+                "category": "Political Documentaries"
+            },
+            {
+                "catId": 10005,
+                "category": "Religious Documentaries"
+            },
+            {
+                "catId": 2595,
+                "category": "Science & Nature Documentaries"
+            },
+            {
+                "catId": 3675,
+                "category": "Social & Cultural Documentaries"
+            },
+            {
+                "catId": 180,
+                "category": "Sports Documentaries"
+            },
+            {
+                "catId": 1159,
+                "category": "Travel & Adventure Documentaries"
+            }
+        ]
+    },
+    {
+        "catId": 5763,
+        "category": "Dramas",
+        "subCategories": [
+            {
+                "catId": 3179,
+                "category": "Biographical Dramas"
+            },
+            {
+                "catId": 29809,
+                "category": "Classic Dramas"
+            },
+            {
+                "catId": 528582748,
+                "category": "Courtroom Dramas"
+            },
+            {
+                "catId": 6889,
+                "category": "Crime Dramas"
+            },
+            {
+                "catId": 4961,
+                "category": "Dramas based on Books"
+            },
+            {
+                "catId": 3653,
+                "category": "Dramas based on real life"
+            },
+            {
+                "catId": 26835,
+                "category": "Faith & Spirituality"
+            },
+            {
+                "catId": 52804,
+                "category": "Faith & Spirituality Movies"
+            },
+            {
+                "catId": 2150,
+                "category": "Foreign Dramas"
+            },
+            {
+                "catId": 500,
+                "category": "Gay & Lesbian Dramas"
+            },
+            {
+                "catId": 384,
+                "category": "Independent Dramas"
+            },
+            {
+                "catId": 384,
+                "category": "Independent Dramas"
+            },
+            {
+                "catId": 751423,
+                "category": "Kids Faith & Spirituality"
+            },
+            {
+                "catId": 11,
+                "category": "Military Dramas"
+            },
+            {
+                "catId": 12123,
+                "category": "Period Pieces"
+            },
+            {
+                "catId": 6616,
+                "category": "Political Dramas"
+            },
+            {
+                "catId": 1255,
+                "category": "Romantic Dramas"
+            },
+            {
+                "catId": 5012,
+                "category": "Showbiz Dramas"
+            },
+            {
+                "catId": 3947,
+                "category": "Social Issue Dramas"
+            },
+            {
+                "catId": 2760,
+                "category": "Spiritual Documentaries"
+            },
+            {
+                "catId": 7243,
+                "category": "Sports Dramas"
+            },
+            {
+                "catId": 6384,
+                "category": "Tearjerkers"
+            },
+            {
+                "catId": 9299,
+                "category": "Teen Dramas"
+            }
+        ]
+    },
+    {
+        "catId": 7462,
+        "category": "Foreign Movies",
+        "subCategories": [
+            {
+                "catId": 3761,
+                "category": "African Movies"
+            },
+            {
+                "catId": 29764,
+                "category": "Art House Movies"
+            },
+            {
+                "catId": 5230,
+                "category": "Australian Movies"
+            },
+            {
+                "catId": 262,
+                "category": "Belgian Movies"
+            },
+            {
+                "catId": 10757,
+                "category": "British Movies"
+            },
+            {
+                "catId": 3960,
+                "category": "Chinese Movies"
+            },
+            {
+                "catId": 32473,
+                "category": "Classic Foreign Movies"
+            },
+            {
+                "catId": 10606,
+                "category": "Dutch Movies"
+            },
+            {
+                "catId": 5254,
+                "category": "Eastern European Movies"
+            },
+            {
+                "catId": 11828,
+                "category": "Foreign Action & Adventure"
+            },
+            {
+                "catId": 4426,
+                "category": "Foreign Comedies"
+            },
+            {
+                "catId": 5161,
+                "category": "Foreign Documentaries"
+            },
+            {
+                "catId": 2150,
+                "category": "Foreign Dramas"
+            },
+            {
+                "catId": 8243,
+                "category": "Foreign Gay & Lesbian Movies"
+            },
+            {
+                "catId": 8654,
+                "category": "Foreign Horror Movies"
+            },
+            {
+                "catId": 6485,
+                "category": "Foreign Sci-Fi & Fantasy"
+            },
+            {
+                "catId": 10306,
+                "category": "Foreign Thrillers"
+            },
+            {
+                "catId": 58807,
+                "category": "French Movies"
+            },
+            {
+                "catId": 58886,
+                "category": "German Movies"
+            },
+            {
+                "catId": 61115,
+                "category": "Greek Movies"
+            },
+            {
+                "catId": 10463,
+                "category": "Indian Movies"
+            },
+            {
+                "catId": 58750,
+                "category": "Irish Movies"
+            },
+            {
+                "catId": 8221,
+                "category": "Italian Movies"
+            },
+            {
+                "catId": 10398,
+                "category": "Japanese Movies"
+            },
+            {
+                "catId": 5685,
+                "category": "Korean Movies"
+            },
+            {
+                "catId": 1613,
+                "category": "Latin American Movies"
+            },
+            {
+                "catId": 5875,
+                "category": "Middle Eastern Movies"
+            },
+            {
+                "catId": 63782,
+                "category": "New Zealand Movies"
+            },
+            {
+                "catId": 7153,
+                "category": "Romantic Foreign Movies"
+            },
+            {
+                "catId": 11567,
+                "category": "Russian"
+            },
+            {
+                "catId": 9292,
+                "category": "Scandinavian Movies"
+            },
+            {
+                "catId": 9196,
+                "category": "Southeast Asian Movies"
+            },
+            {
+                "catId": 58741,
+                "category": "Spanish Movies"
+            }
+        ]
+    },
+    {
+        "catId": 8711,
+        "category": "Horror Movies",
+        "subCategories": [
+            {
+                "catId": 6895,
+                "category": "Creature Features"
+            },
+            {
+                "catId": 10944,
+                "category": "Cult Horror Movies"
+            },
+            {
+                "catId": 45028,
+                "category": "Deep Sea Horror Movies"
+            },
+            {
+                "catId": 11079,
+                "category": "Experimental Movies"
+            },
+            {
+                "catId": 8654,
+                "category": "Foreign Horror Movies"
+            },
+            {
+                "catId": 89585,
+                "category": "Horror Comedy"
+            },
+            {
+                "catId": 11804,
+                "category": "Independent Action & Adventure"
+            },
+            {
+                "catId": 7077,
+                "category": "Independent Movies"
+            },
+            {
+                "catId": 3269,
+                "category": "Independent Thrillers"
+            },
+            {
+                "catId": 947,
+                "category": "Monster Movies"
+            },
+            {
+                "catId": 6998,
+                "category": "Satanic Stories"
+            },
+            {
+                "catId": 8646,
+                "category": "Slasher and Serial Killer Movies"
+            },
+            {
+                "catId": 42023,
+                "category": "Supernatural Horror Movies"
+            },
+            {
+                "catId": 52147,
+                "category": "Teen Screams"
+            },
+            {
+                "catId": 75804,
+                "category": "Vampire Horror Movies"
+            },
+            {
+                "catId": 75930,
+                "category": "Werewolf Horror Movies"
+            },
+            {
+                "catId": 75405,
+                "category": "Zombie Horror Movies"
+            }
+        ]
+    },
+    {
+        "catId": 1701,
+        "category": "Music",
+        "subCategories": [
+            {
+                "catId": 32392,
+                "category": "Classic Musicals"
+            },
+            {
+                "catId": 1105,
+                "category": "Country & Western/Folk"
+            },
+            {
+                "catId": 59433,
+                "category": "Disney Musicals"
+            },
+            {
+                "catId": 10271,
+                "category": "Jazz & Easy Listening"
+            },
+            {
+                "catId": 52843,
+                "category": "Kids Music"
+            },
+            {
+                "catId": 10741,
+                "category": "Latin Music"
+            },
+            {
+                "catId": 13335,
+                "category": "Musicals"
+            },
+            {
+                "catId": 3278,
+                "category": "Rock & Pop Concerts"
+            },
+            {
+                "catId": 13573,
+                "category": "Showbiz Musicals"
+            },
+            {
+                "catId": 55774,
+                "category": "Stage Musicals"
+            },
+            {
+                "catId": 9472,
+                "category": "Urban & Dance Concerts"
+            },
+            {
+                "catId": 2856,
+                "category": "World Music Concerts"
+            }
+        ]
+    },
+    {
+        "catId": 8883,
+        "category": "Romantic Movies",
+        "subCategories": [
+            {
+                "catId": 31273,
+                "category": "Classic Romantic Movies"
+            },
+            {
+                "catId": 36103,
+                "category": "Quirky Romance"
+            },
+            {
+                "catId": 5475,
+                "category": "Romantic Comedies"
+            },
+            {
+                "catId": 1255,
+                "category": "Romantic Dramas"
+            },
+            {
+                "catId": 502675,
+                "category": "Romantic Favorites"
+            },
+            {
+                "catId": 7153,
+                "category": "Romantic Foreign Movies"
+            },
+            {
+                "catId": 9916,
+                "category": "Romantic Independent Movies"
+            },
+            {
+                "catId": 35800,
+                "category": "Steamy Romantic Movies"
+            }
+        ]
+    },
+    {
+        "catId": 1492,
+        "category": "Sci-Fi & Fantasy",
+        "subCategories": [
+            {
+                "catId": 1568,
+                "category": "Action Sci-Fi & Fantasy"
+            },
+            {
+                "catId": 3327,
+                "category": "Alien Sci-Fi"
+            },
+            {
+                "catId": 47147,
+                "category": "Classic Sci-Fi & Fantasy"
+            },
+            {
+                "catId": 4734,
+                "category": "Cult Sci-Fi & Fantasy"
+            },
+            {
+                "catId": 9744,
+                "category": "Fantasy Movies"
+            },
+            {
+                "catId": 6485,
+                "category": "Foreign Sci-Fi & Fantasy"
+            },
+            {
+                "catId": 6926,
+                "category": "Sci-Fi Adventure"
+            },
+            {
+                "catId": 3916,
+                "category": "Sci-Fi Dramas"
+            },
+            {
+                "catId": 1694,
+                "category": "Sci-Fi Horror Movies"
+            },
+            {
+                "catId": 11014,
+                "category": "Sci-Fi Thrillers"
+            }
+        ]
+    },
+    {
+        "catId": 4370,
+        "category": "Sports Movies",
+        "subCategories": [
+            {
+                "catId": 12339,
+                "category": "Baseball Movies"
+            },
+            {
+                "catId": 12762,
+                "category": "Basketball Movies"
+            },
+            {
+                "catId": 12443,
+                "category": "Boxing Movies"
+            },
+            {
+                "catId": 12803,
+                "category": "Football Movies"
+            },
+            {
+                "catId": 6695,
+                "category": "Martial Arts, Boxing & Wrestling"
+            },
+            {
+                "catId": 12549,
+                "category": "Soccer Movies"
+            },
+            {
+                "catId": 9327,
+                "category": "Sports & Fitness"
+            },
+            {
+                "catId": 5286,
+                "category": "Sports Comedies"
+            },
+            {
+                "catId": 180,
+                "category": "Sports Documentaries"
+            },
+            {
+                "catId": 7243,
+                "category": "Sports Dramas"
+            }
+        ]
+    },
+    {
+        "catId": 8933,
+        "category": "Thrillers",
+        "subCategories": [
+            {
+                "catId": 43048,
+                "category": "Action Thrillers"
+            },
+            {
+                "catId": 46588,
+                "category": "Classic Thrillers"
+            },
+            {
+                "catId": 10499,
+                "category": "Crime Thrillers"
+            },
+            {
+                "catId": 10306,
+                "category": "Foreign Thrillers"
+            },
+            {
+                "catId": 31851,
+                "category": "Gangster Movies"
+            },
+            {
+                "catId": 3269,
+                "category": "Independent Thrillers"
+            },
+            {
+                "catId": 9994,
+                "category": "Mysteries"
+            },
+            {
+                "catId": 10504,
+                "category": "Political Thrillers"
+            },
+            {
+                "catId": 5505,
+                "category": "Psychological Thrillers"
+            },
+            {
+                "catId": 11014,
+                "category": "Sci-Fi Thrillers"
+            },
+            {
+                "catId": 9147,
+                "category": "Spy Thrillers"
+            },
+            {
+                "catId": 972,
+                "category": "Steamy Thrillers"
+            },
+            {
+                "catId": 11140,
+                "category": "Supernatural Thrillers"
+            }
+        ]
+    },
+    {
+        "catId": 83,
+        "category": "TV Shows",
+        "subCategories": [
+            {
+                "catId": 52117,
+                "category": "British TV Shows"
+            },
+            {
+                "catId": 46553,
+                "category": "Classic TV Shows"
+            },
+            {
+                "catId": 26146,
+                "category": "Crime TV Shows"
+            },
+            {
+                "catId": 74652,
+                "category": "Cult TV Shows"
+            },
+            {
+                "catId": 72436,
+                "category": "Food & Travel TV"
+            },
+            {
+                "catId": 27346,
+                "category": "Kids’ TV"
+            },
+            {
+                "catId": 67879,
+                "category": "Korean TV Shows"
+            },
+            {
+                "catId": 25804,
+                "category": "Military TV Shows"
+            },
+            {
+                "catId": 4814,
+                "category": "Miniseries"
+            },
+            {
+                "catId": 9833,
+                "category": "Reality TV"
+            },
+            {
+                "catId": 52780,
+                "category": "Science & Nature TV"
+            },
+            {
+                "catId": 60951,
+                "category": "Teen TV Shows"
+            },
+            {
+                "catId": 10673,
+                "category": "TV Action & Adventure"
+            },
+            {
+                "catId": 10375,
+                "category": "TV Comedies"
+            },
+            {
+                "catId": 10105,
+                "category": "TV Documentaries"
+            },
+            {
+                "catId": 11714,
+                "category": "TV Dramas"
+            },
+            {
+                "catId": 83059,
+                "category": "TV Horror"
+            },
+            {
+                "catId": 4366,
+                "category": "TV Mysteries"
+            },
+            {
+                "catId": 1372,
+                "category": "TV Sci-Fi & Fantasy"
+            }
+        ]
+    }
+]

@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('/fonts/icomoon.eot?ymwjr9');
+    src: url('/fonts/icomoon.eot?ymwjr9#iefix') format('embedded-opentype'), url('/fonts/icomoon.ttf?ymwjr9') format('truetype'), url('/fonts/icomoon.woff?ymwjr9') format('woff'), url('/fonts/icomoon.svg?ymwjr9#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo:before {
+    content: "\e900";
+}
+
+.icon-search:before {
+    content: "\e986";
+}
+
+.icon-circle-right:before {
+    content: "\ea42";
+}
+
+.icon-circle-down:before {
+    content: "\ea43";
+}
+
+.icon-new-tab:before {
+    content: "\ea7e";
+    color: inherit;
+}
+
+.no-js {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.js {
+    visibility: visible;
+    opacity: 1;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #141414;
+    color: #e5e5e5;
+}
+
+header {
+    background-color: #fff;
+    padding: 18px 12px 12px 20px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    min-height: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 26px;
+}
+
+.main-content {
+    margin-left: 20px;
+}
+
+.category-holder {
+    min-height: 460px;
+}
+
+.filter-input {
+    position: relative;
+    margin-left: 120px;
+}
+
+button.icon-search {
+    font-size: 18px;
+    color: #141414;
+    left: 8px;
+    top: 9px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+input[type=search] {
+    width: 36px;
+    height: 36px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: all .5s;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    background-color: #fff;
+    border: 1px solid #141414;
+    border-radius: 36px;
+    color: #141414;
+    cursor: pointer;
+    padding: 0 6px 0 30px;
+}
+
+input[type=search]:focus, input[type=search].has-focus {
+    width: 200px;
+    padding-left: 32px;
+}
+
+.accessibly-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.category-list {
+    margin-bottom: 20px;
+}
+
+.category-list>li {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.category-list>li>a {
+    color: #e5e5e5;
+    text-transform: uppercase;
+}
+
+.toggle {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    margin-left: -7px;
+    cursor: pointer;
+}
+
+.logo,
+.toggle:hover,
+.category-list a:hover,
+.help {
+    color: #e50914;
+}
+
+.subcat-container {
+    display: none;
+    margin: 5px 0 10px 0;
+}
+
+.subcat-container ul {
+    margin: 0px 0 0px 20px;
+}
+
+.bullet {
+    position: absolute;
+    left: 0;
+}
+
+.subcat-container li {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 6px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.subcat-container a {
+    color: #fff;
+}
+
+.subcat-container.show {
+    display: block;
+}
+
+.subcat-container.hide {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .subcat-container.show {
+        display: flex;
+    }
+}

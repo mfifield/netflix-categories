@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Netflix UI</title>
+        <meta name="description" content="Category browser for Netflix">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+                shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong>
+                    browser. Please <a href="https://browsehappy.com/">upgrade your browser</a>
+                    to improve your experience and security.</p>
+                <![endif]-->
+        <header>
+            <h1><span class="accessibly-hidden">Netflix Categories</span><span class="icon-logo logo"></span></h1>
+            <div class="filter-input">
+                <button class="icon-search"></button>
+                <input type="search" placeholder="Please type to filter" name="filter" id="filter" value="" />
+            </div>
+        </header>
+        <div class="main-content">
+            <div id="categories" class="category-holder"></div>
+            <p class="help">Select the <span class="icon-circle-right"></span> icon to expand a category or use <span class="icon-search"></span> to search</p>
+        </div>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
