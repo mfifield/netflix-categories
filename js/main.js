@@ -59,7 +59,7 @@
 
     // Filter the result set by partial string matching
     const filterResults = (value) => {
-        var filteredResults = [], matchArray = [];
+        var filteredResults = [], matchArray = [], value = value.toLowerCase();
         if (value.length > 0) {
             originalDataSet.forEach((mainCategory) => {
                 matchArray = mainCategory.subCategories.filter(subCategory => {
@@ -70,10 +70,10 @@
                     "category": mainCategory.category, "subCategories": matchArray });
                 }
             });
-            generateCategories(filteredResults, true);
         } else {
-            generateCategories(originalDataSet);
+            filteredResults = originalDataSet;
         }
+        return filteredResults;
     };
 
     // Toggle the subcategory visibility
@@ -94,10 +94,11 @@
             }
         });
         document.querySelector('#filter').addEventListener('input', function (event) {
-            var target = event.target,
-                cssClass = target.value.length > 0 ? 'has-focus' : '';
+            var target = event.target, targetVal = target.value, 
+                nonEmptyInput = targetVal.length > 0, cssClass = nonEmptyInput ? 'has-focus' : '',
+                filteredObject = filterResults(targetVal);
             target.setAttribute('class', cssClass);
-            filterResults(target.value.toLowerCase());
+            generateCategories(filteredObject, nonEmptyInput);
         });
         document.querySelector('header button.icon-search').addEventListener('click', function (event) {
             document.querySelector('#filter').focus();
