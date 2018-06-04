@@ -81,7 +81,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #141414;
     color: #e5e5e5;
 }
@@ -95,7 +95,6 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 32px;
     width: 100px;
 }
 
@@ -112,16 +111,11 @@ a {
     text-decoration: none;
 }
 
-.logo {
-    font-size: 26px;
-}
-
 .main-content {
     margin-left: 20px;
 }
 
 .category-holder {
-    min-height: 460px;
     /* To handle margin collapse */
     border: 1px solid #141414;
     -webkit-animation-duration: 0.5s;
@@ -132,7 +126,7 @@ a {
 
 .filter-input {
     position: relative;
-    margin-left: 120px;
+    margin-left: 80px;
 }
 
 .filter-input__button {
@@ -159,7 +153,7 @@ input[type=search] {
     -webkit-appearance: none;
     appearance: none;
     transition: all .5s;
-    font-size: 14px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
     border: 1px solid #141414;
@@ -189,8 +183,8 @@ input[type=search]:focus, input[type=search].has-focus {
 }
 
 .category-list>li {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 34px;
 }
 
 .category-list>li>a {
@@ -202,10 +196,11 @@ input[type=search]:focus, input[type=search].has-focus {
     background-color: transparent;
     color: #fff;
     border: none;
-    font-size: 16px;
+    font-size: 22px;
     cursor: pointer;
     padding: 0;
     margin-right: 8px;
+    vertical-align: text-top;
 }
 
 .logo,
@@ -213,6 +208,7 @@ input[type=search]:focus, input[type=search].has-focus {
 .category-list a:hover,
 .help {
     color: #e50914;
+    margin-bottom: 0;
 }
 
 .bullet {
@@ -231,10 +227,10 @@ input[type=search]:focus, input[type=search].has-focus {
 }
 
 .subcat-container li {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 24px;
     margin-bottom: 6px;
-    padding-left: 22px;
+    padding-left: 26px;
     position: relative;
 }
 
@@ -250,7 +246,29 @@ input[type=search]:focus, input[type=search].has-focus {
     display: none;
 }
 
+.help span {
+    padding: 0 3px 0 3px;
+    vertical-align: text-bottom;
+}
+
 @media only screen and (min-width: 1024px) {
+
+    .category-list>li {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .toggle {
+        font-size: 16px;
+    }
+
+    .subcat-container li {
+        font-size: 14px;
+        line-height: 18px;
+        padding-left: 22px;
+        position: relative;
+    }
+
     .subcat-container.show {
         display: flex;
     }
