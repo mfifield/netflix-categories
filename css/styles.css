@@ -102,7 +102,7 @@ a {
     margin-left: 120px;
 }
 
-button.icon-search {
+.filter-input__button {
     font-size: 18px;
     color: #141414;
     left: 8px;
@@ -130,7 +130,7 @@ input[type=search] {
     border-radius: 36px;
     color: #141414;
     cursor: pointer;
-    padding: 0 6px 0 30px;
+    padding: 0 10px 0 20px;
 }
 
 input[type=search]:focus, input[type=search].has-focus {
@@ -177,6 +177,11 @@ input[type=search]:focus, input[type=search].has-focus {
     color: #e50914;
 }
 
+.bullet {
+    position: absolute;
+    left: 0;
+}
+
 .subcat-container {
     display: none;
     margin: 5px 0 10px 0;
@@ -184,11 +189,6 @@ input[type=search]:focus, input[type=search].has-focus {
 
 .subcat-container ul {
     margin: 0 0 0 20px;
-}
-
-.bullet {
-    position: absolute;
-    left: 0;
 }
 
 .subcat-container li {
