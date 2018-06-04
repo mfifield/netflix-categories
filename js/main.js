@@ -95,9 +95,9 @@
         });
         document.querySelector('#filter').addEventListener('input', function (event) {
             var target = event.target, targetVal = target.value, 
-                nonEmptyInput = targetVal.length > 0, cssClass = nonEmptyInput ? 'has-focus' : '',
+                nonEmptyInput = targetVal.length > 0,
                 filteredObject = filterResults(targetVal);
-            target.setAttribute('class', cssClass);
+            target.setAttribute('class', nonEmptyInput ? 'has-focus' : '');
             generateCategories(filteredObject, nonEmptyInput);
         });
         document.querySelector('header button.icon-search').addEventListener('click', function (event) {
