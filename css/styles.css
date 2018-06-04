@@ -16,7 +16,6 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -41,6 +40,33 @@
     content: "\ea7e";
     color: inherit;
 }
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(-40px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+    }
+}
+ 
+@keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-40px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+}
+ 
+.fade-left {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+} 
 
 .no-js {
     visibility: hidden;
@@ -70,6 +96,7 @@ header {
 h1 {
     margin: 0;
     font-size: 32px;
+    width: 100px;
 }
 
 ul {
@@ -95,6 +122,12 @@ a {
 
 .category-holder {
     min-height: 460px;
+    /* To handle margin collapse */
+    border: 1px solid #141414;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .filter-input {
@@ -114,6 +147,10 @@ a {
     padding: 0;
 }
 
+.filter-input__button:focus {
+    outline: none;
+}
+
 input[type=search] {
     width: 36px;
     height: 36px;
@@ -124,7 +161,6 @@ input[type=search] {
     transition: all .5s;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    float: right;
     background-color: #fff;
     border: 1px solid #141414;
     border-radius: 36px;
@@ -136,6 +172,7 @@ input[type=search] {
 input[type=search]:focus, input[type=search].has-focus {
     width: 200px;
     padding-left: 32px;
+    outline: none;
 }
 
 .accessibly-hidden {
@@ -166,8 +203,9 @@ input[type=search]:focus, input[type=search].has-focus {
     color: #fff;
     border: none;
     font-size: 16px;
-    margin-left: -7px;
     cursor: pointer;
+    padding: 0;
+    margin-right: 8px;
 }
 
 .logo,
@@ -180,6 +218,7 @@ input[type=search]:focus, input[type=search].has-focus {
 .bullet {
     position: absolute;
     left: 0;
+    top: 2px;
 }
 
 .subcat-container {
@@ -195,7 +234,7 @@ input[type=search]:focus, input[type=search].has-focus {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 6px;
-    padding-left: 20px;
+    padding-left: 22px;
     position: relative;
 }
 

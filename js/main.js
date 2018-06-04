@@ -110,8 +110,6 @@
             originalDataSet = result;
             generateCategories(originalDataSet);
             bindEventListeners();
-            // Prevent FOUC (remove the no-js class on the HTML element)
-            (function(H) { H.className = H.className.replace(/\bno-js\b/, 'js') })(document.documentElement);
         });
     }, false);
 
