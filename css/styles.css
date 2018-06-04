@@ -185,6 +185,7 @@ input[type=search]:focus, input[type=search].has-focus {
 .category-list>li {
     font-size: 22px;
     line-height: 34px;
+    font-weight: bold;
 }
 
 .category-list>li>a {
@@ -229,6 +230,7 @@ input[type=search]:focus, input[type=search].has-focus {
 .subcat-container li {
     font-size: 18px;
     line-height: 24px;
+    font-weight: normal;
     margin-bottom: 6px;
     padding-left: 26px;
     position: relative;
