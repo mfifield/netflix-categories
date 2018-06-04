@@ -60,19 +60,15 @@
     // Filter the result set by partial string matching
     const filterResults = (value) => {
         var filteredResults = [], matchArray = [], value = value.toLowerCase();
-        if (value.length > 0) {
             originalDataSet.forEach((mainCategory) => {
                 matchArray = mainCategory.subCategories.filter(subCategory => {
                     return (subCategory.category.toLowerCase().indexOf(value) !== -1);
                 });
                 if (mainCategory.category.toLowerCase().indexOf(value) !== -1 || matchArray.length > 0) {
                     filteredResults.push({ "catId": mainCategory.catId, 
-                    "category": mainCategory.category, "subCategories": matchArray });
+                        "category": mainCategory.category, "subCategories": matchArray });
                 }
             });
-        } else {
-            filteredResults = originalDataSet;
-        }
         return filteredResults;
     };
 
@@ -96,7 +92,7 @@
         document.querySelector('#filter').addEventListener('input', function (event) {
             var target = event.target, targetVal = target.value, 
                 nonEmptyInput = targetVal.length > 0,
-                filteredObject = filterResults(targetVal);
+                filteredObject = nonEmptyInput ? filterResults(targetVal) : originalDataSet;
             target.setAttribute('class', nonEmptyInput ? 'has-focus' : '');
             generateCategories(filteredObject, nonEmptyInput);
         });
