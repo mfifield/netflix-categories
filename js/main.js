@@ -77,7 +77,7 @@
     const toggleCategory = (event) => {
         var toggleButton = event.target, parent = toggleButton.parentNode, subContainer = parent.querySelector('.subcat-container');
         var classArray = toggleButton.getAttribute('class').indexOf('down') === -1 ? 
-            ['toggle icon-circle-down','subcat-container show'] : ['toggle icon-circle-right','subcat-container hide'];
+            ['toggle icon-circle-down','subcat-container show'] : ['toggle icon-circle-right','subcat-container'];
         event.currentTarget.querySelectorAll('a').forEach(node => node.setAttribute('class', ''));
         toggleButton.setAttribute('class', classArray[0]);
         subContainer.setAttribute('class', classArray[1]);
@@ -98,7 +98,7 @@
             target.setAttribute('class', nonEmptyInput ? 'has-focus' : '');
             generateCategories(filteredObject, nonEmptyInput);
         });
-        document.querySelector('header button.icon-search').addEventListener('click', function (event) {
+        document.querySelector('header button.icon-search').addEventListener('click', function () {
             filterInput.focus();
         });
     };

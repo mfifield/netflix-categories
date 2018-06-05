@@ -229,10 +229,6 @@ input[type=search]:focus, input[type=search].has-focus {
     display: block;
 }
 
-.subcat-container.hide {
-    display: none;
-}
-
 .help span {
     display: inline-block;
     min-width: 17px;
