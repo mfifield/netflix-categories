@@ -44,13 +44,13 @@
                         generatedMarkup2 += '</ul><ul>';
                     }
                     generatedMarkup2 += `
-                    <li><a href="${netflixUrl}${subCategory.catId}">
-                    <span class="icon-new-tab bullet"></span>${subCategory.category}</a></li>`;
+                        <li><a href="${netflixUrl}${subCategory.catId}">
+                        <span class="icon-new-tab bullet"></span>${subCategory.category}</a></li>`;
                 });
                 generatedMarkup1 += `
-                <li><button class="toggle ${showSubCats ? 'icon-circle-down' : 'icon-circle-right'}">
-                </button><a href="${netflixUrl}${mainCategory.catId}">${mainCategory.category}</a>
-                <div class="subcat-container ${showSubCats ? 'show' : ''}">${generatedMarkup2}</ul></div></li>`;
+                    <li><button class="toggle ${showSubCats ? 'icon-circle-down' : 'icon-circle-right'}">
+                    </button><a href="${netflixUrl}${mainCategory.catId}">${mainCategory.category}</a>
+                    <div class="subcat-container ${showSubCats ? 'show' : ''}">${generatedMarkup2}</ul></div></li>`;
             });
             generatedMarkup1 = `<ul class="category-list">${generatedMarkup1}</ul>`;
         }
@@ -77,9 +77,9 @@
     // Toggle the subcategory visibility
     const toggleCategory = (event) => {
         var toggleButton = event.target, parent = toggleButton.parentNode, subContainer = parent.querySelector('.subcat-container');
-        event.currentTarget.querySelectorAll('a').forEach(node => node.setAttribute('class', ''));
         var classArray = toggleButton.getAttribute('class').indexOf('down') === -1 ? 
-        ['toggle icon-circle-down','subcat-container show'] : ['toggle icon-circle-right','subcat-container hide'];
+            ['toggle icon-circle-down','subcat-container show'] : ['toggle icon-circle-right','subcat-container hide'];
+        event.currentTarget.querySelectorAll('a').forEach(node => node.setAttribute('class', ''));
         toggleButton.setAttribute('class', classArray[0]);
         subContainer.setAttribute('class', classArray[1]);
     };
