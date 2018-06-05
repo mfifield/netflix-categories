@@ -59,12 +59,14 @@
 
     // Filter the result set by partial string matching
     const filterResults = (value) => {
-        var filteredResults = [], matchArray = [], value = value.toLowerCase();
+        var filteredResults = [], matchArray = [], value = value.toLowerCase(), words = value.split(' ');
             originalDataSet.forEach((mainCategory) => {
+                var mainCatDesc = mainCategory.category.toLowerCase();
                 matchArray = mainCategory.subCategories.filter(subCategory => {
-                    return (subCategory.category.toLowerCase().indexOf(value) !== -1);
+                    var subCatDesc = subCategory.category.toLowerCase();
+                    return (words.every(word => (subCatDesc.indexOf(word) !== -1)));
                 });
-                if (mainCategory.category.toLowerCase().indexOf(value) !== -1 || matchArray.length > 0) {
+                if (words.every(word => (mainCatDesc.indexOf(word) !== -1)) || matchArray.length > 0) {
                     filteredResults.push({ "catId": mainCategory.catId, 
                         "category": mainCategory.category, "subCategories": matchArray });
                 }
