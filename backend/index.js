@@ -49,7 +49,7 @@ const generateData = () => {
             domArray[i] = $(this);
             if (re.test(theText)) {
                 // If the previous paragraph tag contains an image, we know this is a main catagory (e.g. Action)
-                var isMainCategory = (i > 0 && domArray[i - 1]).find('img').length ? true : false;
+                var isMainCategory = (i > 0 && domArray[i - 1]).find('img').length;
                 // Some paragraph tags contain line breaks seperating categories, so loop through these
                 theText.split('<br>').forEach(element => {
                     var [currentCatId, description] = element.split('=');
