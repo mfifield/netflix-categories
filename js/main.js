@@ -67,8 +67,7 @@
                     return (words.every(word => (subCatDesc.indexOf(word) !== -1)));
                 });
                 if (words.every(word => (mainCatDesc.indexOf(word) !== -1)) || matchArray.length > 0) {
-                    filteredResults.push({ "catId": mainCategory.catId, 
-                        "category": mainCategory.category, "subCategories": matchArray });
+                    filteredResults.push({ ...mainCategory, "subCategories": matchArray });
                 }
             });
         return filteredResults;
