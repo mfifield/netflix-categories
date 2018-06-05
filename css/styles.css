@@ -38,10 +38,9 @@
 
 .icon-new-tab:before {
     content: "\ea7e";
-    color: inherit;
 }
 
-@-webkit-keyframes fadeInLeft {
+@-webkit-keyframes fadein-left {
     0% {
        opacity: 0;
        -webkit-transform: translateX(-40px);
@@ -52,7 +51,7 @@
     }
 }
  
-@keyframes fadeInLeft {
+@keyframes fadein-left {
     0% {
        opacity: 0;
        transform: translateX(-40px);
@@ -61,21 +60,6 @@
        opacity: 1;
        transform: translateX(0);
     }
-}
- 
-.fade-left {
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-} 
-
-.no-js {
-    visibility: hidden;
-    opacity: 0;
-}
-
-.js {
-    visibility: visible;
-    opacity: 1;
 }
 
 body {
@@ -123,6 +107,11 @@ a {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+
+.fade-left {
+    -webkit-animation-name: fadein-left;
+    animation-name: fadein-left;
+} 
 
 .filter-input {
     position: relative;
@@ -176,10 +165,6 @@ input[type=search]:focus, input[type=search].has-focus {
     width: 1px;
     height: 1px;
     overflow: hidden;
-}
-
-.category-list {
-    margin-bottom: 20px;
 }
 
 .category-list>li {
@@ -249,12 +234,14 @@ input[type=search]:focus, input[type=search].has-focus {
 }
 
 .help span {
+    display: inline-block;
+    min-width: 17px;
+    min-height: 17px;
     padding: 0 3px 0 3px;
     vertical-align: text-bottom;
 }
 
 @media only screen and (min-width: 1024px) {
-
     .category-list>li {
         font-size: 16px;
         line-height: 28px;
@@ -268,7 +255,6 @@ input[type=search]:focus, input[type=search].has-focus {
         font-size: 14px;
         line-height: 18px;
         padding-left: 22px;
-        position: relative;
     }
 
     .subcat-container.show {
