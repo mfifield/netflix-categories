@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('/fonts/icomoon.eot?ymwjr9');
-    src: url('/fonts/icomoon.eot?ymwjr9#iefix') format('embedded-opentype'), url('/fonts/icomoon.ttf?ymwjr9') format('truetype'), url('/fonts/icomoon.woff?ymwjr9') format('woff'), url('/fonts/icomoon.svg?ymwjr9#icomoon') format('svg');
+    src: url('/fonts/icon-fonts.eot?skp2mi');
+    src: url('/fonts/icon-fonts.eot?skp2mi#iefix') format('embedded-opentype'), url('/fonts/icon-fonts.ttf?skp2mi') format('truetype'), url('/fonts/icon-fonts.woff?skp2mi') format('woff'), url('/fonts/icon-fonts.svg?skp2mi#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -16,6 +16,7 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -26,6 +27,14 @@
 
 .icon-search:before {
     content: "\e986";
+}
+
+.icon-expand:before {
+    content: "\e989";
+}
+
+.icon-collapse:before {
+    content: "\e98a";
 }
 
 .icon-circle-right:before {
@@ -42,32 +51,35 @@
 
 @-webkit-keyframes fadein-left {
     0% {
-       opacity: 0;
-       -webkit-transform: translateX(-40px);
+        opacity: 0;
+        -webkit-transform: translateX(-40px);
     }
     100% {
-       opacity: 1;
-       -webkit-transform: translateX(0);
+        opacity: 1;
+        -webkit-transform: translateX(0);
     }
 }
- 
+
 @keyframes fadein-left {
     0% {
-       opacity: 0;
-       transform: translateX(-40px);
+        opacity: 0;
+        transform: translateX(-40px);
     }
     100% {
-       opacity: 1;
-       transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     background-color: #141414;
     color: #e5e5e5;
+}
+
+body, button, input {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -79,11 +91,13 @@ header {
 
 h1 {
     margin: 0;
-    width: 100px;
+    width: 121px;
+    height: 33px;
 }
 
 ul {
     padding: 0;
+    margin: 0;
 }
 
 li {
@@ -93,6 +107,15 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.accessibly-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 .main-content {
@@ -111,11 +134,11 @@ a {
 .fade-left {
     -webkit-animation-name: fadein-left;
     animation-name: fadein-left;
-} 
+}
 
 .filter-input {
     position: relative;
-    margin-left: 80px;
+    margin-left: 60px;
 }
 
 .filter-input__button {
@@ -143,7 +166,6 @@ input[type=search] {
     appearance: none;
     transition: all .5s;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
     border: 1px solid #141414;
     border-radius: 36px;
@@ -152,19 +174,36 @@ input[type=search] {
     padding: 0 10px 0 20px;
 }
 
-input[type=search]:focus, input[type=search].has-focus {
+input[type=search]:focus,
+input[type=search].has-focus {
     width: 200px;
     padding-left: 32px;
     outline: none;
 }
 
-.accessibly-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+.btn-toggle-showall {
+    color: black;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1em;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-toggle-showall .txt {
+    text-transform: uppercase;
+}
+
+.btn-toggle-showall .icon {
+    display: inline-block;
+    margin: 0 5px 0 -5px;
+    min-width: 15px;
+    min-height: 15px;
+    vertical-align: text-top;
 }
 
 .category-list>li {
@@ -194,7 +233,6 @@ input[type=search]:focus, input[type=search].has-focus {
 .category-list a:hover,
 .help {
     color: #e50914;
-    margin-bottom: 0;
 }
 
 .bullet {
@@ -229,6 +267,10 @@ input[type=search]:focus, input[type=search].has-focus {
     display: block;
 }
 
+.help {
+    margin-bottom: 10px;
+}
+
 .help span {
     display: inline-block;
     min-width: 17px;
@@ -238,6 +280,10 @@ input[type=search]:focus, input[type=search].has-focus {
 }
 
 @media only screen and (min-width: 1024px) {
+    .btn-toggle-showall {
+        font-size: 14px;
+    }
+
     .category-list>li {
         font-size: 16px;
         line-height: 28px;

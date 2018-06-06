@@ -18,12 +18,13 @@
         <header>
             <h1><a href="/"><span class="accessibly-hidden">Netflix Categories</span><span class="icon-logo logo"></span></a></h1>
             <div class="filter-input">
-                <button class="filter-input__button icon-search"></button>
+                <button id="expose-filter" class="filter-input__button icon-search"></button>
                 <input type="search" placeholder="Please type to filter" name="filter" id="filter" value="" />
             </div>
         </header>
         <div class="main-content">
             <p class="help">Click <span class="icon-circle-right"></span> to expand a category or <span class="icon-search"></span> to search</p>
+            <button id="toggle-showall" class="btn-toggle-showall"><span class="icon icon-expand"></span><span class="txt">Expand all</span></button>
             <div id="categories" class="category-holder fade-left"></div>
         </div>
         <script src="/js/main.js"></script>

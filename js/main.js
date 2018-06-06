@@ -74,21 +74,31 @@
     };
 
     // Toggle the subcategory visibility
-    const toggleCategory = (event) => {
-        var toggleButton = event.target, parent = toggleButton.parentNode, subContainer = parent.querySelector('.subcat-container');
-        var classArray = toggleButton.getAttribute('class').indexOf('down') === -1 ? 
-            ['toggle icon-circle-down','subcat-container show'] : ['toggle icon-circle-right','subcat-container'];
-        event.currentTarget.querySelectorAll('a').forEach(node => node.setAttribute('class', ''));
-        toggleButton.setAttribute('class', classArray[0]);
-        subContainer.setAttribute('class', classArray[1]);
+    const toggleCategory = (toggleButton, override = false) => {
+        var subContainer = toggleButton.parentNode.querySelector('.subcat-container'),
+            [toggleClass, subContClass] = (override && override === 'expand') || 
+                (!override && toggleButton.getAttribute('class').indexOf('down') !== -1) ? 
+                ['toggle icon-circle-right','subcat-container']: ['toggle icon-circle-down','subcat-container show'];
+        toggleButton.setAttribute('class', toggleClass);
+        subContainer.setAttribute('class', subContClass);
     };
+
+    // Expand/Collapse all functionality
+    const toggleExpandButton = (button) => {
+        var icon = button.querySelector('.icon'),
+                alt = icon.getAttribute('class').indexOf('expand') !== -1 ? 'collapse' : 'expand';
+        button.querySelector('.txt').textContent = `${alt} all`;
+        icon.setAttribute('class', `icon icon-${alt}`);
+        categories.querySelectorAll('button.toggle').forEach(button => toggleCategory(button, alt)); 
+    }
 
     // Bind listeners to categegory toggles and filtering
     const bindEventListeners = () => {
-        var filterInput = document.querySelector('#filter');
-        document.querySelector('#categories').addEventListener('click', function (event) {
+        var filterInput = document.querySelector('#filter'),
+            categories = document.querySelector('#categories');
+        categories.addEventListener('click', function (event) {
             if (event.target.tagName === 'BUTTON') {
-                toggleCategory(event);
+                toggleCategory(event.target);
             }
         });
         filterInput.addEventListener('input', function (event) {
@@ -98,8 +108,11 @@
             target.setAttribute('class', nonEmptyInput ? 'has-focus' : '');
             generateCategories(filteredObject, nonEmptyInput);
         });
-        document.querySelector('header button.icon-search').addEventListener('click', function () {
+        document.querySelector('#expose-filter').addEventListener('click', function () {
             filterInput.focus();
+        });
+        document.querySelector('#toggle-showall').addEventListener('click', function(event) {
+            toggleExpandButton(event.currentTarget);
         });
     };
 
